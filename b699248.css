@@ -1,0 +1,760 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); /* 웹 폰트 Noto Sans KR(korea) 가져오기 */
+
+/* 전체 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;}
+    
+body {   
+    font-family: 'Noto Sans KR', sans-serif; /* 웹에서 쓸 폰트 지정 */
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #Ffffff;
+}
+b {
+    text-decoration: none;
+    color: #F3B200;
+}
+
+img {
+    width: 100%; /* 이미지 크기는 100% */
+}
+
+p {
+    padding: 0.25em;
+    font-size: 1.1em;
+}
+
+#item p {
+    text-align:center;
+}
+
+#item h2 {
+    font-weight: 500;
+    padding: 0.2em 0;
+}
+#shop h1{
+    text-align: center;
+}
+#shop p{
+    text-align: center;
+}
+
+#SPECIAL h1{
+    text-align:center;
+    margin: 2em 0 3em 0;
+}
+#SPECIAL p{
+    text-align:center;
+}
+#SPECIAL h2 {
+    font-weight: 500;
+    padding: 0.2em 0;
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+}
+h2 {
+    text-align: center;
+    font-weight: 300;
+}
+ol {
+    list-style: none;
+}
+
+
+
+/* Structure */
+/* Desktop 사이즈 */
+
+@media screen and (min-width:480px) {
+    .nav{
+    position: fixed; /*메뉴바 픽스드 */
+    top: 0;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    background-color:#ffffff;
+    top: 0;
+    z-index: 1; /* 기본 컨텐츠 위에 올라옴 네비바 */
+    order: 0; /*항상 맨위에 있으라는 뜻*/
+    border-left : 40px solid black ; 
+    }
+
+
+.nav ol li{
+    width: auto;
+    text-align: center;
+    float: left; /*왼쪽으로 붙도록*/
+    padding: 40px 70px 40px 70px;
+    list-style: none;
+    margin: 0 auto; /* 컨텐츠 생기면 마진 자동 조절*/
+}
+
+
+li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+
+li a:hover{
+    color: tomato;
+}
+    #nav {
+         width: 100%;
+        height: 60px;
+    }
+    #nav ol li{
+        font-size: 1.3em;
+    }
+    #nav-1{
+    margin: 50em 0em 7em 31em;
+}
+#nav-1 {
+  font-size:20px;
+    width:480px;
+    
+}
+    #com-title{
+        width: 600px;
+    }
+#item h1{
+    font-weight: 500;
+    text-align:center;
+    margin: 1.8em 0 3em 0 ;
+}
+    #header {
+
+        background: url(final/1920header.png) no-repeat; /* 배경이미지, 반복 안함 */
+        background-position: center center; /* 배경이미지 중앙 정렬 */
+        background-size: cover; /* 배경이미지 크기 조절 */
+        
+    }
+    #first{
+        background: url(final/background.png) no-repeat; 
+        background-position: center center; /* 배경이미지 중앙 정렬 */
+        background-size: cover; /* 배경이미지 크기 조절 */
+    }
+
+    #content {
+        max-width: 1366px;
+        min-width: 1080px;
+        margin: 0 auto;
+        height: 6193px;
+
+
+    }
+        #background2{
+        width: 100%;
+        height: 800px; 
+
+    }
+    
+    #ABOUT1 {
+        color: #ffffff;
+        margin: 0 0 0em 0;
+        overflow:auto;
+    }
+    
+    #blank1-2 {
+        width: 700px;
+        height: 420px;
+        margin: 2em 0em 0 9em;
+        float: left;
+       
+
+    }
+    
+    #ABOUT1-text {
+        width: 38%;
+        padding: 0 0 0 0;
+        margin: 0 8em 0 0;
+        float: right;
+    }
+    #about1-p{
+        width: 100%;
+        font-size : 18px;
+        margin: 1em 0 3em 0;
+        float: right;
+    }
+    
+
+    #ABOUT2 {
+        color: #ffffff;
+        margin: 0 0 10em 0;
+        overflow:auto;
+    }
+    
+    #blank2-2 {
+        width: 700px;
+        height: 400px;
+        margin: 3em 9em 0 0em;
+        float: right;
+        
+    }
+    
+    #ABOUT2-text {
+        width: 49%;
+        font-size : 16px;
+        padding: 0 0 0 0;
+        margin: 0 0 0 9em;
+        float: left;
+    }
+    #about2-p{
+        width: 100%;
+        margin: 4em 0 0 0;
+        float: left;
+    }
+    
+    
+
+    #item {
+        height: 1046px;
+        overflow: hidden;
+        clear: both;
+        margin: 3em 0 2em 0;
+    }
+    #painting{
+    width:50%;
+        margin: 3em 20em 5em 0;
+    }
+    #painting-h{
+        margin : 0 0 0 20em;
+    }
+    #left {
+        color: rgba(1000,1000,1000,100);
+        background-image: url(final/kaws-soonsoo.png);
+        background-size: cover;
+        width: 550px;
+        height: 500px;
+        float: left;
+        margin: 0 3em 0 0;
+        transition-duration : 2s;
+    }
+    
+   #left:hover{
+        background-image: url(final/kaws-soonsoo2.png);
+       color: rgba(1000,1000,1000,0);
+    }
+    #middle {
+        background-image: url(final/kaws-poparts.png);
+        background-size: cover;
+        width: 550px;
+        height: 500px;
+        float: left;
+        transition-duration : 2s;
+        color: rgba(1000,1000,1000,100);
+    }
+    #middle:hover{
+        background-image: url(final/kaws-poparts2.png);
+        color: rgba(1000,1000,1000,0);
+    }
+    #item-contents{
+        margin: 8.5em 0 0em 0; 
+    }
+    #SHOP1 p {
+    text-align:left;
+}
+
+#SHOP1 h3 {
+    font-weight: 500;
+    text-align:justify;
+    padding: 0.5em 0.5em;
+}
+#SHOP2 p {
+    text-align:left;
+}
+
+#SHOP2 h3 {
+    font-weight: 500;
+    text-align:justify;
+    padding: 0.5em 0.5em;
+}
+#SHOP3 p {
+    text-align:left;
+}
+
+#SHOP3 h3 {
+    font-weight: 500;
+    text-align:justify;
+    padding: 0.5em 0.5em;
+}
+#SHOP4 p {
+    text-align:left;
+}
+
+#SHOP4 h3 {
+    font-weight: 500;
+    text-align:justify;
+    padding: 0.5em 0.5em;
+}
+    #shop{
+        overflow: hidden;
+        clear: both;
+        margin: 0em 0 2em 0;
+    }
+    #SHOP1 {
+        margin: 4.2em 5em 2em 11em;
+        overflow:auto;
+    }
+    
+    #SHOP1-image {
+        background-image: url(final/kaws-all.jpg);
+        background-size:cover;
+        width: 800px;
+        height: 500px;
+        margin: 0 0 3em 0;
+        float: left;
+    } 
+    #SHOP1-text {
+        height: 403px;
+        width: 80%;
+        padding: 0 0 0 0;
+        margin: 7em 0 0 0;
+        float: none;
+    }
+    #sub{
+        text-align: left;
+        float: right;
+        font-size : 19px;
+        width: 90%;
+    }
+
+    #SHOP2 {
+        margin: 16em 8em 3em 9em;
+        overflow:auto;
+    }
+    #SHOP2-image {
+        background-image: url(final/pinochio.png);
+        background-size:cover;
+        width: 400px;
+        height: 550px;
+        margin: 0.7em 5em 3em 0em;
+        float: right;
+    }  
+    #SHOP2-text {
+        width: 43%;
+        padding: 0 0 0 0;
+        margin: 5em 0 0 0;
+        float: left;
+    }
+    #SHOP3 {
+        margin: 10em 9em 3em 8.9em;
+        overflow:auto;
+    }
+    #SHOP3-image {
+        background-image: url(final/kaws-changa.png);
+        background-size:cover;
+        width: 490px;
+        height: 600px;
+        margin: 0 0 0 0;
+        float: left;
+    }
+    #SHOP3-text {
+        width: 43%;
+        padding: 0 0 0 0;
+        margin: 5em 0 0 0;
+        float: right;
+    }
+    #SHOP4 {
+        margin: 10em 9em 20em 9em;
+        overflow:auto;
+    }
+    #SHOP4-image {
+        background-image: url(final/kaws-astro.png);
+        background-size:cover;
+        width: 450px;
+        height: 600px;
+        margin: 0.5em 0.65em 0 0em;
+        float: right;
+    }
+    #SHOP4-text {
+        width: 48%;
+        padding: 0 0 0 0;
+        margin: 5em 0 0 0em;
+        float: left;
+    }
+    #holidayheader {
+        margin: 4.2em 0em 2em 5em;
+        overflow:auto;
+    }
+    #HOLIDAY-image{
+    background-image: url(final/kawsHoliday.jpg);
+        background-size:cover;
+        width: 900px;
+        height: 600px;
+        margin: 0 0em 5em 3em;
+        float: left;
+}
+      #HOLIDAY1-text {
+        height: 403px;
+        width: 80%;
+        padding: 0 0 0 0;
+        margin: 5em 0 0 0;
+        float: none;
+    }
+    #holiday4{
+        width:700px;
+    }
+    #holiday-item{
+    margin: 20em 0em 0em 0em;
+    }
+    #item-left {
+        background-image: url(final/seokchon.png);
+        background-size: cover;
+        color: rgba(1000,1000,1000,100);
+        width: 400px;
+        height: 400px;
+        float: left;
+        margin: 0 0 32em 0;
+        transition-duration: 2s;
+    }
+     #item-left:hover{
+        background-image: url(final/seokchon2.png);
+         color: rgba(1000,1000,1000,0);
+         transform : scale(2) translate(200px,0);
+    }   
+    #item-middle {
+        background-image: url(final/taipei.png);
+        color: rgba(1000,1000,1000,100);
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        float: left;
+        margin: 0 0 32em 0;
+        transition-duration: 2s;
+    }
+    #item-middle:hover{
+        background-image: url(final/taipei2.png);
+        color: rgba(1000,1000,1000,0);
+        transform : scale(2);
+    }     
+    #item-right {
+        background-image: url(final/hongkong.png);
+        background-size: cover;
+        color: rgba(1000,1000,1000,100);
+        width: 400px;
+        height: 400px;
+        float: right;
+        margin: 0 0 32em 0;
+        transition-duration: 2s;
+    }
+    #item-right:hover{
+        background-image: url(final/hongkong2.png);
+        color: rgba(1000,1000,1000,0);
+        transform : scale(2) translate(-200px,0);
+    }
+    #item-contents{
+        padding: 0 4em 0 4em;
+    }
+    #event{
+        margin: 0 0 0 0; 
+        float: right;
+        overflow: hidden;
+    }
+    #footer{
+    height: 230px;
+    background-color: #A1E4F3;
+    }
+    #logo{
+        margin: 0 0 0 53em;
+        padding: 3.7em 0 0 0;
+        width: 239px;
+        height: 74px;
+    }
+
+}
+
+/* Smart Phone 사이즈 */
+/* 너비가 480픽셀 이하일 때 */
+@media screen and (max-width:480px) {
+ 
+    .nav{
+    position: fixed; /*메뉴바 픽스드 */
+    top: 0;
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    background-color:#ffffff;
+    top: 0;
+    z-index: 1; /* 기본 컨텐츠 위에 올라옴 네비바 */
+    order: 0; /*항상 맨위에 있으라는 뜻*/
+    border-left : 10px solid black ; 
+    }
+    
+.nav ol li{
+    width: auto;
+    text-align: center;
+    float: left; /*왼쪽으로 붙도록*/
+    padding: 5px 40px 10px 10px;
+    list-style: none;
+    margin: 0 auto; /* 컨텐츠 생기면 마진 자동 조절*/
+}
+    li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 0.5em
+}
+li a:hover{
+    color: tomato;
+    transition-duration: 1s;
+}
+ 
+    #nav-1{
+    margin: 22em 0em 0em 3.1em;
+        float: left
+    }
+    #nav-1{
+        font-size: 11px;
+        width: 50%;
+    }
+    #header {
+        width: 100%;
+        height: 300px;
+        background: url(final/mobileheader.png) no-repeat; /* 배경이미지, 반복 안함 */
+        background-position: center center; /* 배경이미지 중앙 정렬 */
+        background-size: cover; /* 배경이미지 크기 조절 */
+    }
+    #first{
+        background-color: #FFA4A4;
+    }
+    #content {  
+        height: 100%;
+        width: 100%;
+        background: url(final/mobilebackground.png) no-repeat; 
+        background-position: center; /* 배경이미지 중앙 정렬 */
+        background-size: cover; /* 배경이미지 크기 조절 */
+    }
+        #background2{
+        width: 100%;
+   }
+    #ABOUT1{
+        width: 83%;
+        margin: 4em 2em 6em 2em;
+        font-size: 90%;
+        color: #ffffff;
+        text-align: justify;
+    }
+    #about1-p{
+        margin : 1em 0 0 0;
+    }
+    #ABOUT2{
+        width: 85%;
+        margin: 0 2.3em 0 2.3em;
+        font-size: 90%;
+        text-align: justify;
+        color : #ffffff;
+    }
+    
+    #origin{
+margin: 0 0 3.5em 0;
+    }
+    #blank1-2{
+        margin: 0 0 1em 0;
+    }
+    #blank2-2{
+        margin: 0 0 1em 0;
+    }
+    #item{
+        width: 90%;
+        margin: 10em 1.3em 2em 1.3em;
+        font-size: 90%; 
+    }
+    #item h1{
+        margin: 2em 0 1em 0;
+        padding: 0 2.9em 0 2.9em;
+        font-size:25px;
+        text-align: center;
+    }
+    #item-contents{
+       padding: 6.7em 0 6.7em 0 ;
+    }
+    #left {
+        background-image: url(final/kaws-soonsoo.png);
+        background-size: cover;
+        margin: 0 1em 1em 1em;
+        width: 400px;
+        height: 330px;
+        color: rgba(1000,1000,1000,100);
+        transition-duration: 1s;
+    } 
+     #left:hover{
+        background-image: url(final/kaws-soonsoo2.png);
+         color: rgba(1000,1000,1000,0);
+    }  
+    #middle {
+        background-image: url(final/kaws-poparts.png);
+        background-size: cover;
+        margin: 0 1em 1em 1em;
+        width: 400px;
+        height: 330px;
+        transition-duration: 1s;
+        color: rgba(1000,1000,1000,100);
+    }
+    #middle:hover{
+        background-image: url(final/kaws-poparts2.png);
+        color: rgba(1000,1000,1000,0);
+    }
+    #shop{
+        width: 100%;
+        margin: 15em 0em 2em 0em;
+        font-size: 80%; 
+    }
+    #shop h1{
+        margin: 2em 0 1em 0;
+        padding: 0 2.9em 0 2.9em;
+        font-size:25px;
+        text-align: center;
+    }
+    #SHOP1-image {
+        background-image: url(final/kaws-all.jpg);
+        background-size:cover;
+        width: 450px;
+        height: 300px;
+        margin: 4em 0 3em 0;
+    }
+    #SHOP1{
+       margin : 3em 1.3em 5em 1.3em ;
+    }
+#shop1-title{
+    margin : 0 0 2em 0;
+}
+    #sub{
+        text-align: center;
+    }
+    #SHOP2{
+       margin: 8em 1.3em 5em 1.3em ;
+    }
+#shop2-title{
+    margin : 0 0 2em 0;
+}
+    #SHOP2-image {
+        background-image: url(final/pinochio.png);
+        background-size:cover;
+        width: 100%;
+        height: 500px;
+        margin: 4em 0 2em -1em;
+    }
+    #SHOP3{
+       margin: 8em 1.3em 5em 1.3em ;
+    }
+    #SHOP3-image {
+        background-image: url(final/kaws-changa.png);
+        background-size:cover;
+        width: 100%;
+        height: 500px;
+        margin: 4em 0 2em -2em;
+    }
+    #shop3-title{
+    margin : 0 0 2em 0;
+}
+    #SHOP4{
+       margin: 8em 1.3em 10em 1.3em ;
+    }
+    #SHOP4-image {
+        background-image: url(final/kaws-astro.png);
+        background-size:cover;
+        width: 100%;
+        height: 500px;
+        margin: 4em 0 2em -1em;
+    }
+   #shop4-title{
+    margin : 0 0 2em 0;
+}
+        #HOLIDAY-image {
+        background-image: url(final/KawsHoliday.jpg);
+        background-size:cover;
+        width: 100%;
+        height: 300px;
+        margin: 1em 0 3em 0;
+        float: left;
+    }
+    #holiday4{
+        margin : 0 0 -1em 0;
+    }
+    #holidayheader{
+        margin : 0 0 5em 0;
+    }
+    #SPECIAL{
+        width: 90%;
+        margin: 0 1.3em 8em 1.3em;
+        font-size: 90%;
+    }
+    #SPECIAL h1{
+        margin: 2em 0 1em 0;
+        padding: 0 1em 0 1em;
+        font-size:25px;
+        text-align: center;
+    }
+    #item-left {
+        background-image: url(final/seokchon.png);
+        background-size: cover;
+        margin: 0 1em 1em 1em;
+        width: 400px;
+        height: 400px;
+        color: rgba(1000,1000,1000,100);
+        transition-duration: 2s;
+    }
+    #item-left:hover{
+        background-image: url(final/seokchon2.png);
+           color: rgba(1000,1000,1000,0);
+    }
+    #item-middle {
+        background-image: url(final/taipei.png);
+        background-size: cover;
+        margin: 0 1em 1em 1em;
+        width: 400px;
+        height: 400px;
+        color: rgba(1000,1000,1000,100);
+        transition-duration: 2s;
+    }
+    #item-middle:hover{
+        background-image: url(final/taipei2.png);
+        color: rgba(1000,1000,1000,0);
+    }
+    #item-right {
+        background-image: url(final/hongkong.png);
+        background-size: cover;
+        margin: 0 1em 1em 1em;
+        width: 400px;
+        height: 400px;
+        color: rgba(1000,1000,1000,100);
+        transition-duration: 2s;
+        
+    }
+    #item-right:hover{
+        background-image: url(final/hongkong2.png);
+        color: rgba(1000,1000,1000,0);
+    } 
+    #footer{
+        margin:0em 0 0 0;
+    height: 100px;
+    background-color: #A1E4F3;
+    } 
+    #contact{
+        margin : 1em 0 0 0;
+        text-align: center;
+        background-color:  #A1E4F3;
+    }
+    #logo{
+        margin: 0 0 0 11em;
+        padding: em 0 0 0;
+        width: 120px;
+    }
+
+
+

@@ -76,7 +76,7 @@ ol {
 /* Structure */
 /* Desktop 사이즈 */
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:482px) {
     .nav{
     position: fixed; /*메뉴바 픽스드 */
     top: 0;

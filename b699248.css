@@ -76,7 +76,7 @@ ol {
 /* Structure */
 /* Desktop 사이즈 */
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:481px) {
     .nav{
     position: fixed; /*메뉴바 픽스드 */
     top: 0;
@@ -728,8 +728,7 @@ margin: 0 0 3.5em 0;
         width: 400px;
         height: 400px;
         color: rgba(1000,1000,1000,100);
-        transition-duration: 2s;
-        
+        transition-duration: 2s; 
     }
     #item-right:hover{
         background-image: url(final/hongkong2.png);

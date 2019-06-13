@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); /* 웹 폰트 Noto Sans KR(korea) 가져오기 */
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap');
+</style>
 
 /* 전체 초기화*/
 * {

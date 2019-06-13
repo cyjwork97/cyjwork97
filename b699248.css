@@ -76,7 +76,7 @@ ol {
 /* Structure */
 /* Desktop 사이즈 */
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
     .nav{
     position: fixed; /*메뉴바 픽스드 */
     top: 0;
@@ -473,11 +473,8 @@ li a:hover{
         width: 239px;
         height: 74px;
     }
-
 }
 
-/* Smart Phone 사이즈 */
-/* 너비가 480픽셀 이하일 때 */
 @media screen and (max-width:480px) {
  
     .nav{
@@ -753,6 +750,5 @@ margin: 0 0 3.5em 0;
         padding: em 0 0 0;
         width: 120px;
     }
-
-
+}
 
